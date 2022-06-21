@@ -19,7 +19,7 @@ public class Details {
     @Size(max = 300)
     public String name;
     @Size(max = 200)
-    public long phone;
+    public String phone;
     @Size(max = 600)
     public String address;
     @Size(max = 200)
