@@ -54,7 +54,11 @@ public String verify="confirm";
     @GetMapping("/get-profile")
     public Details getProfileByEmail(@RequestParam String email) {return detailService.Find(email);}
 
-
+ @GetMapping("/recent")
+    public Iterable<User1> findNow()
+    {
+        return userRepository1.getByDate(LocalDate.now());
+    }
 
 
 
