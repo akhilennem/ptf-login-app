@@ -20,5 +20,5 @@ public class User1 {
     public String para;
     private String phone;
     private LocalDate date=LocalDate.now();
-    private LocalTime time=LocalTime.now();
+    private LocalTime time;
 }
