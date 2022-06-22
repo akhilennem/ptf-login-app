@@ -21,6 +21,4 @@ public class User1 {
     private long phone;
     private LocalDate date=LocalDate.now();
     private LocalTime time=LocalTime.now();
-
-    private String attendance;
 }
