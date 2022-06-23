@@ -46,7 +46,7 @@ public String verify="confirm";
     }
 
     @PutMapping("/update-profile")
-    public Details profile(Details details)
+    public Details profile(@RequestBody Details details)
     {
         return detailRepository.save(details);
     }
