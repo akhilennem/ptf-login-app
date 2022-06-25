@@ -59,7 +59,11 @@ public String verify="confirm";
     {
         return userRepository1.getByDate(LocalDate.now());
     }
-
+ @GetMapping("/get_ok")
+    public String hello()
+    {
+        return "hello its OK!";
+    }
 
 
 }
