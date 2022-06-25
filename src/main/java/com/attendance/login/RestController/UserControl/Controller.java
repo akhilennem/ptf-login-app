@@ -55,7 +55,7 @@ public String verify="confirm";
     public Details getProfileByEmail(@RequestParam String email) {return detailService.Find(email);}
 
   @PostMapping("/recent")
-    public Iterable<User1> findNow(LocalDate date)
+    public Iterable<User1> findNow(@RequestBody LocalDate date)
     {
         return userRepository1.getByDate(date);
     }
