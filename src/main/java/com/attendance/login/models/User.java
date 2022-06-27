@@ -1,5 +1,7 @@
 package com.attendance.login.models;
 
+import org.springframework.lang.Nullable;
+
 import java.util.HashSet;
 import java.util.Set;
 
@@ -20,7 +22,8 @@ public class User {
   private Long id;
 
   @NotBlank
-  @Size(max = 20)
+  @Email
+  @Size(max = 50)
   private String username;
 
 //  @NotBlank
@@ -28,9 +31,8 @@ public class User {
 //  private String name;
 
 
-  @NotBlank
+ @NotBlank
   @Size(max = 50)
-  @Email
   private String email;
 
   @NotBlank
