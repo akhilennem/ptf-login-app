@@ -36,7 +36,7 @@ public class Controller {
     }
 
     @GetMapping("/get-user-details")
-    public Iterable<User1> take(@RequestParam String email) {
+    public Iterable<User1> take( String email) {
         return userRepository1.findByEmail(email);
     }
 
