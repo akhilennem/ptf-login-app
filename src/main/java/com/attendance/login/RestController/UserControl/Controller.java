@@ -26,7 +26,7 @@ public class Controller {
     public DetailsServices detailService;
 
     @PostMapping("/save")
-    public ResponseEntity AddUser( User1 user1) {
+    public ResponseEntity AddUser( @RequestBody User1 user1) {
         if (verify.equals(user1.para)) {
             userRepository1.save(user1);
             return new ResponseEntity<>(HttpStatus.OK);
@@ -36,7 +36,7 @@ public class Controller {
     }
 
     @GetMapping("/get-user-details")
-    public Iterable<User1> take( String email) {
+    public Iterable<User1> take( @RequestParam String email) {
         return userRepository1.findByEmail(email);
     }
 
