@@ -31,7 +31,8 @@ public class User {
 //  private String name;
 
 
- @NotBlank
+  @NotBlank
+  @Email
   @Size(max = 50)
   private String email;
 
